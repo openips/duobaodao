@@ -10,3 +10,5 @@
 
 
 夺宝岛修改了提交方式为post代码也做了相应的修改
+
+![test](https://github.com/Luck89757/duobaodao/blob/master/test.png)
