@@ -4,7 +4,7 @@ import  re
 #1. 粘贴产品ID
 #2. 输入预期价格  时间剩余2秒时 且  低于预期价格 开始加价
 #3 输入cookie
-ID = '113160984'      #产品id
+ID = '产品id'    #产品id
 my_price = 40           #预期价格
 y = 2                   #加价幅度
 s = 2                 #等待刷新时间
@@ -41,12 +41,6 @@ def get_pricetime():
     return cur_price,str(c_time)
 #下单
 
-#post https://used-api.jd.com/auctionRecord/offerPrice
-#auctionId: 113158942
-#price: 2
-#trackId: 3b154f3a78a78f8b6c2eea5a3cee5674
-#eid: UTT4AVFUIZFVD6KGHHJRAGEEGFJ4MWFSOPDUEF7KBEHDA5ODK3GKDKP5PCVTWIAQ32N2ZT2AR5YBAH3T27354OAI3Q
-
 def buy(price):
     # price = int(price)
     # buy_url = 'https://used-api.jd.com/auctionRecord/offerPrice?auctionId='+ ID + '&price='+ str(price)  +'&callback=__jp24'
@@ -56,8 +50,7 @@ def buy(price):
     data = {
         'trackId': '3b154f3a78a78f8b6c2eea5a3cee5674',
         'eid': 'UTT4AVFUIZFVD6KGHHJRAGEEGFJ4MWFSOPDUEF7KBEHDA5ODK3GKDKP5PCVTWIAQ32N2ZT2AR5YBAH3T27354OAI3Q',
-        # 'price':'2',
-        # 'auctionId':'113155661'
+             
     }
     data['price'] = str(int(price))
     data['auctionId'] = str(ID)
