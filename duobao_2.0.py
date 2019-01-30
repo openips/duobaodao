@@ -73,7 +73,7 @@ try:
             s = 0.0002
             print('开始加速 ' + str(s))
         time.sleep(s)    #等待刷新时间
-        if tt < -1 :
+        if tt < -1 or x > my_price :
             print('程序结束')
             break
 except KeyboardInterrupt:
